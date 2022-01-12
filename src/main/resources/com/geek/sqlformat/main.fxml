@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.geek.sqlformat.controller.SQLFormatController">
+    <GridPane hgap="10" styleClass="page" vgap="10" stylesheets="@main.css">
+        <padding>
+            <Insets bottom="20" left="20" right="20" top="20"/>
+        </padding>
+        <TextArea styleClass="text" GridPane.columnSpan="6" GridPane.rowIndex="0" wrapText="true" prefRowCount="30"
+                  fx:id="sqlText">
+        </TextArea>
+        <Button styleClass="btn, btn-default" text="加单引号逗号" GridPane.columnIndex="0" GridPane.rowIndex="1"
+                prefWidth="130" onAction="#addSingleQuoteComma"/>
+        <Button styleClass="btn, btn-default" text="加双引号逗号" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                prefWidth="130" onAction="#addDoubleQuoteComma"/>
+        <Button styleClass="btn, btn-default" text="加逗号" GridPane.columnIndex="2" GridPane.rowIndex="1" prefWidth="130"
+                onAction="#addComma"/>
+        <Button styleClass="btn, btn-default" text="加单引号" GridPane.columnIndex="3" GridPane.rowIndex="1" prefWidth="130"
+                onAction="#addSingleQuote"/>
+        <Button styleClass="btn, btn-default" text="加双引号" GridPane.columnIndex="0" GridPane.rowIndex="2" prefWidth="130"
+                onAction="#addDoubleQuote"/>
+        <Button styleClass="btn, btn-default" text="加括号" GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="130"
+                onAction="#addBrackets"/>
+        <Button styleClass="btn, btn-default" text="消除回车" GridPane.columnIndex="2" GridPane.rowIndex="2" prefWidth="130"
+                onAction="#clearEnter"/>
+        <Button styleClass="btn, btn-default" text="消除空格" GridPane.columnIndex="3" GridPane.rowIndex="2" prefWidth="130"
+                onAction="#clearBlank"/>
+        <Button styleClass="btn, btn-default" text="消除单引号" GridPane.columnIndex="0" GridPane.rowIndex="3"
+                prefWidth="130" onAction="#clearSingleQuote"/>
+        <Button styleClass="btn, btn-default" text="消除双引号" GridPane.columnIndex="1" GridPane.rowIndex="3"
+                prefWidth="130" onAction="#clearDoubleQuote"/>
+        <Button styleClass="btn, btn-default" text="消除括号" GridPane.columnIndex="2" GridPane.rowIndex="3" prefWidth="130"
+                onAction="#clearBrackets"/>
+        <Button styleClass="btn, btn-default" text="格式化SQL" GridPane.columnIndex="3" GridPane.rowIndex="3"
+                prefWidth="130" onAction="#formatSQL"/>
+    </GridPane>
+</VBox>
