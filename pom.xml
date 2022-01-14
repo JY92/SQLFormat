@@ -65,9 +65,8 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>com.geek.sqlformat/com.geek.sqlformat.SQLFormatApplication</mainClass>
-                            <launcher>app</launcher>
-                            <jlinkZipName>app</jlinkZipName>
-                            <jlinkImageName>app</jlinkImageName>
+                            <launcher>SQLFormat</launcher>
+                            <jlinkImageName>SQLFormat</jlinkImageName>
                             <noManPages>true</noManPages>
                             <stripDebug>true</stripDebug>
                             <noHeaderFiles>true</noHeaderFiles>
